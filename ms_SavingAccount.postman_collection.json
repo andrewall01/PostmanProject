@@ -1,0 +1,57 @@
+{
+	"info": {
+		"_postman_id": "29fb0906-2ea1-4759-a70e-3433466d96c6",
+		"name": "ms_SavingAccount",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18428440"
+	},
+	"item": [
+		{
+			"name": "Saving",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \r\n    \"accountNumber\":\"107777777700197698\",\r\n    \"bankAccountCode\":\"70\",\r\n    \"availableBalance\":\"710.00\",\r\n    \"currency\":\"SOL\",\r\n    \"holderName\":\"Luis\",\r\n    \"holderLastName\":\"Ramirez\",\r\n    \"status\":\"A\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8007/savings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8007",
+					"path": [
+						"savings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Saving",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8007/savings",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8007",
+					"path": [
+						"savings"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

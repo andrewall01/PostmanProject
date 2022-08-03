@@ -1,0 +1,91 @@
+{
+	"info": {
+		"_postman_id": "5cae0e31-349a-4945-9729-e8adb5e3cbb8",
+		"name": "ms_BootcoinProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18428440"
+	},
+	"item": [
+		{
+			"name": "Post_Save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{       \r\n    \"documentNumber\":\"74343514\",\r\n    \"documentType\":\"1\",\r\n    \"phone\":\"941224433\",\r\n    \"cardNumber\":\"4444555566667777\",    \r\n    \"accountNumber\": \"1910000000009010\",\r\n    \"balance\":150.00\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8010/bootcoin/account/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"bootcoin",
+						"account",
+						"save"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get_Phone",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8010/bootcoin/account/941224433",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"bootcoin",
+						"account",
+						"941224433"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Put_Update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{       \r\n    \"documentNumber\":\"74343514\",\r\n    \"documentType\":\"1\",\r\n    \"phone\":\"941224433\",\r\n    \"cardNumber\":\"4444555566667777\",    \r\n    \"accountNumber\": \"1910000000009010\",\r\n    \"balance\":150.00\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8010/bootcoin/account/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8010",
+					"path": [
+						"bootcoin",
+						"account",
+						"update"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
